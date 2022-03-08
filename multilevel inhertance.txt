@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp11
+{
+    class A
+    {
+        public string name;
+        public void T()
+        {
+            Console.WriteLine("HELLO");
+        }
+    }
+        class B:A
+        {
+            public int id;
+        }
+    class C:B
+    {
+        public int age;
+
+    }
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            C OBJ = new C();
+            OBJ.name = "NAMAN";
+            OBJ.T();
+            OBJ.id = 02;
+            OBJ.age = 21;
+            Console.WriteLine(OBJ.name+"  id   "+OBJ.id + "  age  "+OBJ.age);
+            Console.ReadLine();
+        }
+    }
+}
